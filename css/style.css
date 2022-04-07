@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    box-sizing: border-box;   
+}
+
+body {
+    min-height: 100vh;
+    background-color: #111;
+    overflow-y: auto;
+}
+
+/* Nav Bar */
+nav {
+    position: sticky;
+    top: 0;
+    height: 140px;
+    width: 100%;
+    color: yellow;
+    font-family: "Baloo 2";
+    text-align: center;
+    text-shadow: 0 0 8px black;
+    background: linear-gradient(20deg, rgb(255, 81, 0), rgb(255, 188, 65));
+    padding: 0 10px;
+    border-bottom: 4px solid rgb(255, 255, 255);
+}
+nav > h1 {
+    font-size: 30px;
+}
+nav > h3 {
+    font-size: 14px;
+    color: rgb(233, 233, 233);
+}
+
+.container {
+    min-width: 100%;
+    min-height: calc(100vh - 140px);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/* Box Template */
+.box {
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(109, 18, 121);
+    border: 2px solid rgb(179, 102, 255);
+    margin: 10px 0;
+    /* box-shadow: 0 0 10px 8px rebeccapurple; */
+}
+.box > h2 {
+    font-family: "Comic Sans MS", sans-serif;
+    color: rgb(255, 37, 219);
+}
+.box > input {
+    width: 80%;
+    padding: 5px 15px;
+    font-size: 20px;
+    font-family: "Consolas";
+    background-color: rgb(0, 1, 75);
+    border: none;
+    color: yellow;
+    cursor: pointer;
+    border-radius: 222px;
+    margin-bottom: 10px;
+}
+.box > input:focus-visible {
+    outline: none;
+}
+.box > input:focus,
+.box >input:hover,
+.box >input:focus-visible {
+    outline: 3px solid yellow;
+}
+.box > .output {
+    width: 80%;
+    min-height: 100px;
+    background-color: rgb(23, 62, 94);
+    color: skyblue;
+    font-family: Consolas;
+    font-weight: 700;
+    padding: 4px;
+    border: 3px solid black;
+    word-wrap: normal;
+}
